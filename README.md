@@ -1,6 +1,13 @@
 # Customized File Synchronization
 
-This repository contains a Bash script, `sync.sh`, designed to provide a customized solution for synchronizing the latest files from a source folder on a remote server to a destination folder on another remote server. It will only copy files that do not already exist in the destination folder.
+In various scenarios, you may need to synchronize or transfer files between different locations, such as remote servers or local folders. However, sometimes you only need to copy the latest files, rather than synchronizing the entire directory structure. This repository provides two Bash scripts that offer customized solutions for efficient file synchronization, tailored to your specific needs.
+
+These scripts are designed to be lightweight, portable, and easy to use, without relying on external dependencies. They leverage the power of Bash scripting to provide a self-contained solution for synchronizing the latest files between remote servers or local folders.
+
+By focusing on transferring only the latest files, these scripts can help minimize bandwidth usage, reduce disk space consumption, and improve overall efficiency. Whether you need to back up critical data, synchronize remote development environments, or distribute content updates, these scripts offer a flexible and customizable approach to meet your file synchronization requirements.
+
+
+This repository contains a Bash script, `sync.sh`, `synclocal.sh`  designed to provide a customized solution for synchronizing the latest files from a source folder to a destination folder locally or on another remote server. It will only copy files that do not already exist in the destination folder.
 
 ## Customized Synchronization Solution
 
@@ -68,6 +75,33 @@ The script can be useful in various scenarios where efficient and customized fil
 6. Run the script: `./sync.sh`
 
 The script will then copy the latest files from the source folder on the source server to the destination folder on the destination server, but only if the files do not already exist in the destination folder.
+
+### synclocal.sh
+
+`synclocal.sh` is a lightweight and portable Bash script that provides a similar functionality to `sync.sh`, but for local folders on the same machine. It's designed to be easy to use, with no external dependencies, and focused on transferring only the latest files between the source and destination folders.
+
+#### Features
+
+- **Efficient Synchronization**: Copies only the latest files, reducing disk space usage.
+- **Local Folder Support**: Supports synchronization between local folders on the same machine.
+- **Lightweight and Portable**: Written in pure Bash, no external dependencies required.
+- **Customizable**: Easily configure the source and destination folder paths.
+- **Error Handling**: Includes basic error handling and informative output messages.
+- **Incremental Synchronization**: Designed to be run repeatedly, transferring only new or modified files since the last synchronization.
+
+#### Usage
+
+1. Open the `synclocal.sh` script in a text editor.
+2. Set the following variables with the appropriate paths for your source and destination folders:
+   - `sourceFolder`: The path to the source folder (e.g., `/path/to/sourceFolder`)
+   - `destinationFolder`: The path to the destination folder (e.g., `/path/to/destinationFolder`)
+3. Save the changes to the script.
+4. Make the script executable by running: `chmod +x synclocal.sh`
+5. Run the script: `./synclocal.sh`
+
+The script will then copy the latest files from the source folder to the destination folder, but only if the files do not already exist in the destination folder.
+
+For more details and usage instructions, please refer to the comments within the `synclocal.sh` script.
 
 ## Contact Us 📧
 
