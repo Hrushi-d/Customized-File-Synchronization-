@@ -68,7 +68,7 @@ While external packages like `rsync` offer more advanced features and flexibilit
 
 The script will then copy the latest files from the source folder on the source server to the destination folder on the destination server, but only if the files do not already exist in the destination folder.
 
-**Contact Us 📧**
+## Contact Us 📧
 
 Have questions, feedback, or need assistance? Reach out to:
 
