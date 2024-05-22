@@ -2,6 +2,12 @@
 
 This repository contains a Bash script, `sync.sh`, designed to provide a customized solution for synchronizing the latest files from a source folder on a remote server to a destination folder on another remote server. It will only copy files that do not already exist in the destination folder.
 
+## Customized Synchronization Solution
+
+This script serves as a customized solution for scenarios where you need to transfer only the latest files between remote servers, but an external package for file synchronization (such as `rsync`) may not be readily available or installed on the target systems.
+
+While external packages like `rsync` offer more advanced features and flexibility, they may not always be present in all environments, especially in restricted or minimal setups. In such cases, this Bash script provides a lightweight and self-contained solution for selectively synchronizing the latest files between remote servers.
+
 ## Use Cases
 
 The script can be useful in various scenarios where efficient and customized file synchronization or transfer between remote servers is required. Here are some potential use cases:
@@ -30,11 +36,6 @@ The script can be useful in various scenarios where efficient and customized fil
    - The script can be used as part of a monitoring system to transfer the latest log files or other diagnostic files from remote servers to a central monitoring location for analysis or archiving.
    - This can be useful in troubleshooting issues or tracking system events across multiple remote servers.
 
-## Customized Synchronization Solution
-
-This script serves as a customized solution for scenarios where you need to transfer only the latest files between remote servers, but an external package for file synchronization (such as `rsync`) may not be readily available or installed on the target systems.
-
-While external packages like `rsync` offer more advanced features and flexibility, they may not always be present in all environments, especially in restricted or minimal setups. In such cases, this Bash script provides a lightweight and self-contained solution for selectively synchronizing the latest files between remote servers.
 
 ## Advantages
 
