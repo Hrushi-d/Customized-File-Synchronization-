@@ -76,11 +76,11 @@ The script can be useful in various scenarios where efficient and customized fil
 
 The script will then copy the latest files from the source folder on the source server to the destination folder on the destination server, but only if the files do not already exist in the destination folder.
 
-### synclocal.sh
+## synclocal.sh
 
 `synclocal.sh` is a lightweight and portable Bash script that provides a similar functionality to `sync.sh`, but for local folders on the same machine. It's designed to be easy to use, with no external dependencies, and focused on transferring only the latest files between the source and destination folders.
 
-#### Features
+### Features
 
 - **Efficient Synchronization**: Copies only the latest files, reducing disk space usage.
 - **Local Folder Support**: Supports synchronization between local folders on the same machine.
@@ -89,12 +89,12 @@ The script will then copy the latest files from the source folder on the source 
 - **Error Handling**: Includes basic error handling and informative output messages.
 - **Incremental Synchronization**: Designed to be run repeatedly, transferring only new or modified files since the last synchronization.
 
-#### Usage
+### Usage
 
 1. Open the `synclocal.sh` script in a text editor.
 2. Set the following variables with the appropriate paths for your source and destination folders:
-   - `sourceFolder`: The path to the source folder (e.g., `/path/to/sourceFolder`)
-   - `destinationFolder`: The path to the destination folder (e.g., `/path/to/destinationFolder`)
+  - `sourceFolder`: The path to the source folder (e.g., `/path/to/sourceFolder`)
+  - `destinationFolder`: The path to the destination folder (e.g., `/path/to/destinationFolder`)
 3. Save the changes to the script.
 4. Make the script executable by running: `chmod +x synclocal.sh`
 5. Run the script: `./synclocal.sh`
@@ -102,6 +102,7 @@ The script will then copy the latest files from the source folder on the source 
 The script will then copy the latest files from the source folder to the destination folder, but only if the files do not already exist in the destination folder.
 
 For more details and usage instructions, please refer to the comments within the `synclocal.sh` script.
+
 
 ## Contact Us 📧
 
