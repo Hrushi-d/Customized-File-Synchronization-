@@ -73,6 +73,12 @@ The script can be useful in various scenarios where efficient and customized fil
 5. Make the script executable by running: `chmod +x sync.sh`
 6. Run the script: `./sync.sh`
 
+## Limitations
+
+- The script assumes that the source and destination folders are already created and accessible on the respective servers.
+- The script does not include any error handling for network or connection issues during the file transfer process.
+- The script does not support recursive copying of subdirectories within the source folder.
+
 The script will then copy the latest files from the source folder on the source server to the destination folder on the destination server, but only if the files do not already exist in the destination folder.
 
 ## synclocal.sh
