@@ -1,5 +1,5 @@
 # Customized File Synchronization
-This repository contains a Bash scripts, `sync.sh`, `synclocal.sh`  designed to provide a customized solution for synchronizing the latest files from a source folder to a destination folder locally or on another remote server. It will only copy files that do not already exist in the destination folder.
+This repository contains  Bash scripts, `sync.sh`, `synclocal.sh`  designed to provide a customized solution for synchronizing the latest files from a source folder to a destination folder locally or on another remote server. It will only copy files that do not already exist in the destination folder.
 
 In various scenarios, you may need to synchronize or transfer files between different locations, such as remote servers or local folders. However, sometimes you only need to copy the latest files, rather than synchronizing the entire directory structure. This repository provides two Bash scripts that offer customized solutions for efficient file synchronization, tailored to your specific needs.
 
